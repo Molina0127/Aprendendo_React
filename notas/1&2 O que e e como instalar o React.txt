@@ -1,0 +1,44 @@
+O que é o React?
+
+- Uma biblioteca JS para criação de interfaces, o uso do Front-end no HTML, CSS e JS.
+
+- Utilizado para construir SPAs (Single Page Application) -> Um arquivo de index que roda toda a aplicação.
+
+- Baseado em componentes, onde nós vamos dividir o nosso site como um quebra-cabeça. Podemos reduzir os componentes a níveis muito menores, isso varia de aplicação para aplicação.
+
+- Utiliza o JSX para renderizar HTML, o HTML no React vai poder executar JS deixar o HTML mais dinâmico e etc.
+
+- Aplica o Virtual DOM para realizar as alterações do DOM. (Uma cópia do DOM para observar todos os eventos que vão acontecer para alterar na tela do usuário)
+
+- Podemos adicionar a um projeto ou criar um projeto com ele.
+
+
+Como instalar o React?
+
+- Para instalar o React vamos utilizar uma ferramente chamada Create React App;
+
+- Recebemos todos os arquivos da biblioteca e temos como executá-la;
+
+- Para utilizar precisamos do Node e também do npm;
+
+- Esta ferramenta também otimiza o app gerado para produção;
+
+- É possível iniciar a aplicação com npm start;
+
+Obs: npx é um comando que roda baseado no npm, porém ele executa algum script
+
+npx create-react-app meu-projeto -> Foi o comando utilizado para instalar o React, e ele demora um pouco.
+
+npm start -> Inicia o servidor de desenvolvimento
+
+npm run build -> Transforma o app em arquivos estáticos para produção
+
+npm test -> Serve para testar
+
+npm run eject -> Muda a maneira como o react funciona
+
+Quando instalamos o React nos deparamos com a enorme quantia de arquivos que vem junto, quando vemos o arquivo "index.js" ele é base da nossa aplicação.
+Esse arquivo importa o App, e no App vemos todas as instruções e principais comandos da nossa aplicação. 
+O index.js vai rodar esse App.js no html e aí que as coisas começam a funcionar.
+
+index.css vai ser o arquivo responsável por gerar o css da aplicação toda.

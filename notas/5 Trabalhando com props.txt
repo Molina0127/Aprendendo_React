@@ -1,0 +1,62 @@
+- As props são valores passados para componentes;
+
+- Podemos deixá-los dinâmicos;
+
+- Ou seja, mudando a execução por causa do valor da prop;
+
+- O valor é passado como um atributo na chamada do componente;
+
+- E precisa ser resgatado dentro de uma propriedade/argumento chamada props na função de definição do componente;
+
+- As props são somente de leitura;
+
+Quando se passa a props para um componente, é semelhante a passar um argumento para um objeto JS.
+
+Sintaxe:
+
+function SayMyName(props) {
+    
+    return (
+        <div>
+            <p>E aí {props.nome}, tudo bem?</p>
+        </div>
+    )
+}
+
+export default SayMyName	
+
+Esse props nome, é o argumento que vai ser dinâmico.
+
+Existe uma forma mais resumida de trabalhar com props que é por meio do structuring, esse permite que nós não tenhamos que escrever diversas vezes, props, props e props.
+
+Sem Structuring
+
+function Pessoa({props}){
+    return (
+        <div>
+            <img src={props.foto} alt={props.nome}/>
+            <h2>Nome: {props.nome}</h2>
+            <p>Idade: {props.idade}</p>
+            <p>Profissão: {props.profissao}</p>
+        </div>
+    )
+}
+
+export default Pessoa
+
+
+Com Structuring
+
+function Pessoa({nome, idade, foto, profissao}){
+    return (
+        <div>
+            <img src={foto} alt={nome}/>
+            <h2>Nome: {nome}</h2>
+            <p>Idade: {idade}</p>
+            <p>Profissão: {profissao}</p>
+        </div>
+    )
+}
+
+export default Pessoa
+

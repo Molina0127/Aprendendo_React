@@ -1,0 +1,17 @@
+- O CSS pode ser adicionado de forma global na aplicação, por meio do arquivo index.css por exemplo;
+
+- Porém é possível estilizar a nível de componentes;
+
+- Utilizamos o CSS modules para isso;
+
+- Basta criar um arquivo como: Componente.module.css;
+
+- E chamar este CSS no componente;
+
+Quando criamos CSS para os componentes no React, não podemos utilizar classes com traços -
+
+Assim como os outros componentes, os componentes CSS são reutilizáveis, e é possível utilizar um css global, ou um css específico.
+
+E esse é o padrão que ele é importado 
+
+import styles from './Frase.module.css'

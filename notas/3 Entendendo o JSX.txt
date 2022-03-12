@@ -1,0 +1,18 @@
+- O JSX é como um HTML, porém dentor do código JavaScript;
+
+- É a principal maneira de escrever HTML com o React;
+
+- Podemos interpolar variáveis, inserindo ela entre {};
+
+- É possível também executar funções em JSX;
+
+- Inserir valores em atributos de tags também é válido em JSX;
+
+O JSX é mais rígido em relação ao HTML, então devemos prestar mais atenção em suas tags, do que tags de HTML comuns.
+
+Dentro do React todo elemento deve ter um elemento pai.
+
+No React todas as tags devem ser fechadas.
+
+A palavra Class é uma palavra reservada para o React caso nós desejamos definir uma classe como atribuito no React, devemos utilizar className.
+

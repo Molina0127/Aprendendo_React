@@ -1,0 +1,45 @@
+- Permite dividir a aplicação em partes;
+
+- Os componentes renderizam JSX, assim como App.js (que é um componente);
+
+- Precisamos criar um arquivo de componente;
+
+- E importá-lo onde precisamos utilizar;
+
+- Normalmente ficam em uma pasta chamada components;
+
+O export, exporta arquivos para outros.
+
+O import, importa um arquivo para dentro de si.
+
+Existe uma conveção de quando criarmos os componentes, sempre criarmos com letras maiúsculas.
+
+Na sintaxe do react quando nós colocamos uma função, e depois colocamos o return, nós não colocamos um simples valor, nós passamos um formato de html.
+
+Exemplo:
+
+function HelloWorld() {
+
+    return (
+        <div>
+            <h1>Meu primeiro componente!</h1>
+        </div>
+    )
+
+}
+
+export default HelloWorld;
+
+
+E para implementar o novo componente, basicamente devemos:
+Importar no nosso arquivo no App.js (Também podemos importar componentes em outros componentes, porém para aparecer na interface do usuário normalmente colocamos no App.js)
+
+import HelloWorld from './components/HelloWorld'
+
+E chamar ele dentro do nosso Return:
+
+<HelloWorld/>
+
+E assim o componente estará funcionando.
+
+Um fator chave do componente é a reutilização.
